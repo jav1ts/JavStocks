@@ -15,7 +15,7 @@ const db = new Sequelize(
 
 const User = db.define('users', {
     email: {
-        type: Sequelize.toString,
+        type: Sequelize.STRING,
         unique: true,
         validate: {
             isEmail: true
