@@ -1,4 +1,4 @@
-const { User, Stock } = require('/models');
+const { User, Stock } = require('./models');
 
 // delete everything in the database
 

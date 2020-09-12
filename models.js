@@ -3,10 +3,10 @@ require('dotenv').config();
 // const bcrypt = require('bcrypt')
 
 const db = new Sequelize(
-    process.env.DATABASE_URL || 'postgres://localhost:5432/stocks_db',
+    process.env.DATABASE_URL || 'postgres://localhost:5432/javstocks',
     {
         dialect: 'postgres',
-        database: 'stocks_db',
+        database: 'javstocks',
         define: {
             underscored: true,
             returning: true
