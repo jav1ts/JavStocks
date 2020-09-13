@@ -1,0 +1,1 @@
+{"version":3,"sources":["App.css","Register.css","LoginWrapper.css"],"names":[],"mappings":"AAAA,cACE,eACF,CCFA,YACE,eACF,CCFA,aACE,YACF","file":"main.d67c2eec.chunk.css","sourcesContent":[".fixed-margin {\n  margin-top: 10px;\n}",".left-align{\n  text-align: left;\n}",".even-height {\n  height: 350px;\n}"]}
