@@ -118,7 +118,7 @@ export default class App extends Component {
     if (newBal >= 0) {
       await addStock({ companyName: symbolData.companyName, ticker: symbolData.symbol, qty: qty, userId: userId })
       await this.setState({ balance: newBal, qty: "", purchaseStatus: 'good', visible: true, qtyPurchased: qty, symbolPresent: false })
-      updateBalance(userId, { balance: `${newBal}` })
+      await updateBalance(userId, { balance: `${newBal}` })
       setTimeout(() => this.setState({ visible: false }), 3000)
     }
 
