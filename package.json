@@ -4,7 +4,11 @@
   "description": "'This is a full stack stocks application'",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:reset": "dropdb --if-exists -e stocks_db && createdb -e javstocks && node resetDb.js && node seeds.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client && npm run build"
   },
   "repository": {
     "type": "git",
